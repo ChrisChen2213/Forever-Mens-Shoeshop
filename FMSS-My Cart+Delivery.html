@@ -4,15 +4,16 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Nike Smart UI-Input Menu</title>
+    <title>Forever Men's Shoeshop-Signup</title>
     <!-- Bootstrap -->
-    <link href="css/bootstrap-4.3.1.css" rel="stylesheet">
+    <link href="bootstrap-4.3.1.css" rel="stylesheet">
+	  <link href="sidebar.css" rel="stylesheet">  
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <center>
 		<div class="container">
-		<a class="navbar-brand" href="Smart UI-Main Menu.html">Nike Smart UI-Input Menu</a>
+		<a class="navbar-brand" href="index.html">Forever Men's Shoeshop</a>
 		</div>
 	</center>
     </nav>
@@ -20,23 +21,45 @@
 
 <!-- banner -->
 
+<div id="mySidenav" class="sidenav">
+  <!-- Bootstrap -->
+    <link href="sidebar.css" rel="stylesheet">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="index.html">Main</a>
+  <a href="FMSS-Signup.html">Sign Up</a>
+  <a href="FMSS-Shopping.html">Shopping</a>
+  <a href="FMSS-My Cart+Delivery.html">My Cart+Delivery</a>
+</div>
+
+<!-- Use any element to open the sidenav -->
 <hr>
-<center>
-
-<h3>We are helping our delivery partners to do a better job!</h3>
-
-<p style="font-size: 22px">City - 24 hours</p>
-<p style="font-size: 22px">Intercity - 72 hours</p>
-<p style="font-size: 22px">Domestic - 7 days</p>
-
-<p style="font-style: italic">Terms & Conditions apply.</p>
-
-</center>
-
+<span onclick="openNav()"><span	style="font-family:courier;"> <span class="navbar-brand"> MENU </span> </span> </span>
 <hr>
 
-<!-- slides -->
-     <div class="container mt-3">
+
+<!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
+<div id="main">
+
+	
+<script>
+/* Set the width of the side navigation to 250px and the left margin of the page content to 250px */
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+}
+
+/* Set the width of the side navigation to 0 and the left margin of the page content to 0 */
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+  document.getElementById("main").style.marginLeft = "0";
+}
+</script>
+<!-- Script for sidebar>
+	  
+	  
+<hr>
+<!-- These are the magical slides -->	  
+    <div class="container mt-3">
       <div class="row">
         <div class="col-12">
           <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
@@ -47,21 +70,21 @@
             </ol>
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <img class="d-block w-100" src="images/gif4.gif" width="50%" height="37.5%" alt="Just Do It">
+                <img class="d-block w-100" src="car-1.gif" width="50%" height="37.5%" alt="Leather Shoes">
                 <div class="carousel-caption d-none d-md-block">
                   <h5></h5>
                   <p></p>
                 </div>
               </div>
               <div class="carousel-item">
-                <img class="d-block w-100" src="images/gif4.gif" width="50%" height="37.5%" alt="Second slide">
+                <img class="d-block w-100" src="car-1.gif" width="50%" height="37.5%" alt="Casual Shoes">
                 <div class="carousel-caption d-none d-md-block">
                   <h5>Shoes</h5>
                   <p>Something we started with and aced it.</p>
                 </div>
               </div>
               <div class="carousel-item">
-                <img class="d-block w-100" src="images/gif4.gif" width="50%" height="37.5%" alt="Third slide">
+                <img class="d-block w-100" src="car-1.gif" width="50%" height="37.5%" alt="Boots">
                 <div class="carousel-caption d-none d-md-block">
                   <h5>Clothes</h5>
                   <p>Your loyal companion on your way to the best of you.</p>
@@ -80,13 +103,14 @@
         </div>
       </div>
       <hr>
- </div>
+<!-- ads -->
+   </div>
     <div class="container">
       <div class="row">
         <div class="col-4">
           <div class="row">
             <div class="col-2">
-				<img class="rounded-circle" alt="Fast Shipping" src="images/fastshipping.png" width="60" height="40">
+				<img class="rounded-circle" alt="Fast Shipping" src="fastdelivery.png" width="60" height="40">
 			</div>
             <div class="col-lg-6 col-10 ml-1">
               <h4>Fast Shipping</h4>
@@ -95,7 +119,7 @@
         </div>
         <div class="col-4">
           <div class="row">
-            <div class="col-2"><img class="rounded-circle" alt="Free Shipping" src="images/freturn-icon-10.jpg" width="40" height="40" ></div>
+            <div class="col-2"><img class="rounded-circle" alt="Free Shipping" src="freturn.jpg" width="40" height="40" ></div>
             <div class="col-lg-6 col-10 ml-1">
               <h4>Free Returns</h4>
             </div>
@@ -103,7 +127,7 @@
         </div>
         <div class="col-4">
           <div class="row">
-            <div class="col-2"><img class="rounded-circle" alt="Free Shipping" src="images/low-price-10-581758.png" width="40" height="40"></div>
+            <div class="col-2"><img class="rounded-circle" alt="low prices" src="freedelivery.png" width="40" height="40"></div>
             <div class="col-lg-6 col-10 ml-1">
               <h4>Low Prices</h4>
             </div>
@@ -111,6 +135,20 @@
         </div>
       </div>
     </div>
+	<hr>
+	<center>
+
+<h3>We are helping our delivery partners to do a better job!</h3>
+
+<p style="font-size: 22px">City - 24 hours</p>
+<p style="font-size: 22px">Intercity - 72 hours</p>
+<p style="font-size: 22px">Domestic - 7 days</p>
+
+<p style="font-style: italic">Terms & Conditions apply.</p>
+
+</center>
+
+<hr>
 	<hr>  
     <h2 class="text-center">Welcome to the Nike Family.</h2>
 	<center>
@@ -145,87 +183,62 @@
   <label for="pwd">Country:</label>
   <input type="password" class="form-control" id="cnty">
 </div>
-<div class="form-group">
-  <label for="sel2">Gender:</label>
-  <select class="form-control" id="sel2">
-    <option>Female</option>
-    <option>Male</option>
-    <option>Others</option>  
-  </select>
-</div>	
+
 
 <div class="form-group">
   <label for="sel1">Your preferred shoes:</label>
   <select class="form-control" id="sel1">
     <option>All Shoes</option>
     <option>lifestyle</option>
-    <option>Jordan</option>
+    <option>Casual</option>
     <option>Running</option>
     <option>Basketball</option>
 	<option>Football</option>
-	<option>Gym Training</option>
-	<option>Skateboarding</option>  
-  </select>
-</div>	
-
-<div class="form-group">
-  <label for="sel1">Your preferred clothes:</label>
-  <select class="form-control" id="sel1">
-    <option>All Clothing</option>
-    <option>Performance</option>
-    <option>Gender Neutral</option>
-    <option>Compression & Baselayer</option>
-	<option>Tops & T-Shirts </option>
-	<option>Polos </option>
-	<option>Hoodies & Sweatshirts </option>
-	<option>Trousers and Tights</option>  
-	<option>Shorts</option>
-	<option>Swimwear</option>
+	<option>Leather</option>
+	<option>Boots</option>  
   </select>
 </div>	
 	
 </div>	  
 <center>
-	<a href="Smart UI-Output Menu.html" class="btn btn-success">Sign me up!</a>
+	<a href="FMSS-Shopping.html" class="btn btn-success">Sign me up!</a>
 
 </center>	
     <hr>
+	<!-- footer -->
     <div class="container text-white bg-dark p-4">
       <div class="row">
         <div class="col-6 col-md-8 col-lg-7">
           <div class="row text-center">
             <div class="col-sm-6 col-md-4 col-lg-4 col-12">
              <ul class="list-unstyled">
-                <img src="images/facebook-logo-icon-744423.png" width="60" alt="facebook">&nbsp;
+                <img src="fb-1.png" width="60" alt="facebook">&nbsp;
               </ul>
               <ul class="list-unstyled">
-                <a href="https://www.facebook.com/nike/">@nike</a>
+                <a href="#">@FFMS</a>
 				</ul>
             </div>
             <div class="col-sm-6 col-md-4 col-lg-4 col-12">
               <ul class="list-unstyled">
-                <img src="images/instagram-round-flat-512.png" width="50" alt="Instagram">&nbsp;
+                <img src="ins.png" width="50" alt="Instagram">&nbsp;
               </ul>
               <ul class="list-unstyled">
-                <a href="https://www.instagram.com/nike/">@nike</a>
+                <a href="#">@FFMS</a>
               </ul>
             </div>
             <div class="col-sm-6 col-md-4 col-lg-4 col-12">
               <ul class="list-unstyled">
-                <img src="images/twitter-circle-512.png" width="50" alt="Twitter">&nbsp;
+                <img src="twi.png" width="50" alt="Twitter">&nbsp;
               </ul>
               <ul class="list-unstyled">
-                <a href="https://twitter.com/nike">@nike</a>
+                <a href="#">@FFMS</a>
               </ul>
             </div>
           </div>
         </div>
         <div class="col-md-4 col-lg-5 col-6">
           <address>
-            <strong>Nike, Inc.</strong><br>
-            One Bowerman Drive<br>
-            Beaverton, OR 97005<br>
-            <abbr title="Phone">P:</abbr> 1-800-344-6453
+            <strong>Forever Men's Shoeshop</strong>
           </address>
         </div>
       </div>
@@ -234,15 +247,16 @@
       <div class="container">
         <div class="row">
           <div class="col-12">
-            <p>Copyright © Nike 2019. All rights reserved.</p>
+            <p>Copyright © FFMS 2021. All rights reserved.</p>
           </div>
         </div>
       </div>
     </footer>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="jquery-3.3.1.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap-4.3.1.js"></script>
+    <script src="popper.min.js"></script>
+    <script src="bootstrap-4.3.1.js"></script>
   </body>
+	  </div>
 </html>
